@@ -13,17 +13,27 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 items-center">
           {["Platform", "Solutions", "Developers", "Resources", "Pricing"].map((item) => (
-            <a key={item} href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a
+              key={item}
+              href="#"
+              className="text-gray-300 hover:text-white transition-transform transform hover:scale-110 duration-200"
+            >
               {item}
             </a>
           ))}
         </nav>
 
-        <div className="space-x-8">
-            <a href="#" className="text-gray-300 hover:text-white">Log in</a>
-            <button className="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                Schedule a demo
-            </button>
+        {/* Right Section */}
+        <div className="space-x-8 flex items-center">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-white transition-transform transform hover:scale-110 duration-200"
+          >
+            Log in
+          </a>
+          <button className="bg-violet-600 hover:bg-violet-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-transform transform hover:scale-110 duration-200">
+            Schedule a demo
+          </button>
         </div>
 
         {/* Mobile menu toggle (optional for mobile nav) */}
